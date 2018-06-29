@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Programmer</class>
+ <widget class="QWidget" name="Programmer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>958</width>
+    <height>626</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>30</y>
+     <width>481</width>
+     <height>451</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Camera_profile</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>421</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="btnCamera1">
+       <property name="text">
+        <string>CAMERA Param1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="btnCamera10">
+       <property name="text">
+        <string>CAMERA Param10</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QPushButton" name="btnCamera19">
+       <property name="text">
+        <string>CAMERA Param19</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="btnCamera2">
+       <property name="text">
+        <string>CAMERA Param2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="btnCamera11">
+       <property name="text">
+        <string>CAMERA Param11</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QPushButton" name="btnCamera20">
+       <property name="text">
+        <string>CAMERA Param20</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="btnCamera3">
+       <property name="text">
+        <string>CAMERA Param3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="btnCamera12">
+       <property name="text">
+        <string>CAMERA Param12</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QPushButton" name="btnCamera21">
+       <property name="text">
+        <string>CAMERA Param21</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="btnCamera4">
+       <property name="text">
+        <string>CAMERA Param4</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="btnCamera13">
+       <property name="text">
+        <string>CAMERA Param13</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QPushButton" name="btnCamera22">
+       <property name="text">
+        <string>CAMERA Param22</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QPushButton" name="btnCamera5">
+       <property name="text">
+        <string>CAMERA Param5</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QPushButton" name="btnCamera14">
+       <property name="text">
+        <string>CAMERA Param14</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QPushButton" name="btnCamera23">
+       <property name="text">
+        <string>CAMERA Param23</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QPushButton" name="btnCamera6">
+       <property name="text">
+        <string>CAMERA Param6</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QPushButton" name="btnCamera15">
+       <property name="text">
+        <string>CAMERA Param15</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QPushButton" name="btnCamera24">
+       <property name="text">
+        <string>CAMERA Param24</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QPushButton" name="btnCamera7">
+       <property name="text">
+        <string>CAMERA Param7</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QPushButton" name="btnCamera16">
+       <property name="text">
+        <string>CAMERA Param16</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="2">
+      <widget class="QPushButton" name="btnCamera25">
+       <property name="text">
+        <string>CAMERA Param25</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QPushButton" name="btnCamera8">
+       <property name="text">
+        <string>CAMERA Param8</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QPushButton" name="btnCamera17">
+       <property name="text">
+        <string>CAMERA Param17</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="2">
+      <widget class="QPushButton" name="btnCamera26">
+       <property name="text">
+        <string>CAMERA Param26</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QPushButton" name="btnCamera9">
+       <property name="text">
+        <string>CAMERA Param9</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QPushButton" name="btnCamera18">
+       <property name="text">
+        <string>CAMERA Param18</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="2">
+      <widget class="QPushButton" name="btnCamera27">
+       <property name="text">
+        <string>CAMERA Param27</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>441</width>
+     <height>451</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Profile</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>391</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="btnPlatformConfig">
+       <property name="text">
+        <string>Platform Configuration</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="btnKeyboardMap1">
+       <property name="text">
+        <string>KeyboardMap1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QPushButton" name="btnSerialParam">
+       <property name="text">
+        <string>Serial Param</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="btnPID">
+       <property name="text">
+        <string>PID PARAM</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="btnKeyboardMap2">
+       <property name="text">
+        <string>KeyboardMap2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QPushButton" name="btnEnhMmt">
+       <property name="text">
+        <string>ENH &amp; MMT Param</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="btnJosHdl">
+       <property name="text">
+        <string>JosHandle</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="btnUTC1">
+       <property name="text">
+        <string>UTC Param1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QPushButton" name="btnOSD1">
+       <property name="text">
+        <string>OSD Param1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="btnJosMap1">
+       <property name="text">
+        <string>JosMap1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="btnUTC2">
+       <property name="text">
+        <string>UTC Param2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QPushButton" name="btnJosMap2">
+       <property name="text">
+        <string>JosMap2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QPushButton" name="btnUTC3">
+       <property name="text">
+        <string>UTC Param3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QPushButton" name="btnOSD3">
+       <property name="text">
+        <string>OSD Param3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QPushButton" name="btnOSD2">
+       <property name="text">
+        <string>OSD Param2</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
