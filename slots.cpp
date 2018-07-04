@@ -304,23 +304,7 @@ void Dialog::on_tabwidget_pid_Profile_itemChanged(QTableWidgetItem *item)
             int block = 2;
             int field = i%16;
             float value = item->text().toFloat();
-            if(2 == i)
-            {
-                value = (1/(value*PI/180*5.0*9/PI));
-                QString strx = QString("%1").arg(value);
-                load_config_flag = 1;
-                tabwidget_pid_Profile->item(2,1)->setText(strx);
-                load_config_flag = 0;
-                //ui->label_scalarx->setText(strx);
-            }
-            else if(3 == i)
-            {
-                value = (1/(value*PI/180*4.5*9/PI));
-                load_config_flag = 1;
-                tabwidget_pid_Profile->item(3,1)->setText(QString("%1").arg(value));
-                load_config_flag = 0;
-                //ui->label_scalary->setText(QString("%1").arg(value));
-            }
+
             send_mutex.lock();
             send_arr[3] = 0x30;
             send_arr[4] = block;
@@ -365,23 +349,8 @@ void Dialog::on_tabWidget_JosHandle_Profile_itemChanged(QTableWidgetItem *item)
         int block = 3;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_JosHandle_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_JosHandle_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -425,23 +394,7 @@ void Dialog::on_tabWidget_Josmap1_Profile_itemChanged(QTableWidgetItem *item)
         int block = 4;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_Josmap1_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_Josmap1_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -485,23 +438,7 @@ void Dialog::on_tabWidget_Josmap2_Profile_itemChanged(QTableWidgetItem *item)
         int block = 5;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_Josmap2_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_Josmap2_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -545,23 +482,7 @@ void Dialog::on_tabWidget_Keyboardmap1_Profile_itemChanged(QTableWidgetItem *ite
         int block = 6;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_Keyboardmap1_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_Keyboardmap1_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -605,23 +526,7 @@ void Dialog::on_tabWidget_Keyboardmap2_Profile_itemChanged(QTableWidgetItem *ite
         int block = 7;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_Keyboardmap2_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_Keyboardmap2_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -665,23 +570,7 @@ void Dialog::on_tabWidget_SerialParam_Profile_itemChanged(QTableWidgetItem *item
         int block = 8;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_SerialParam_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_SerialParam_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -725,23 +614,7 @@ void Dialog::on_tabWidget_UTCParam1_Profile_itemChanged(QTableWidgetItem *item)
         int block = 9;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_UTCParam1_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_UTCParam1_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -785,23 +658,7 @@ void Dialog::on_tabWidget_UTCParam3_Profile_itemChanged(QTableWidgetItem *item)
         int block = 11;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_UTCParam3_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_UTCParam3_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -845,23 +702,7 @@ void Dialog::on_tabWidget_UTCParam2_Profile_itemChanged(QTableWidgetItem *item)
         int block = 10;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_UTCParam2_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_UTCParam2_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -905,23 +746,7 @@ void Dialog::on_tabWidget_EMParam_Profile_itemChanged(QTableWidgetItem *item)
         int block = 12;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_EMParam_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_EMParam_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -965,23 +790,7 @@ void Dialog::on_tabWidget_OSDParam1_Profile_itemChanged(QTableWidgetItem *item)
         int block = 13;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_OSDParam1_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_OSDParam1_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -1025,23 +834,7 @@ void Dialog::on_tabWidget_OSDParam2_Profile_itemChanged(QTableWidgetItem *item)
         int block = 14;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_OSDParam2_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_OSDParam2_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -1085,23 +878,7 @@ void Dialog::on_tabWidget_OSDParam3_Profile_itemChanged(QTableWidgetItem *item)
         int block = 15;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_OSDParam3_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_OSDParam3_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -1145,23 +922,7 @@ void Dialog::on_tabWidget_CameraParam1_camera_Profile_itemChanged(QTableWidgetIt
         int block = 16;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_CameraParam1_camera_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_CameraParam1_camera_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -1205,23 +966,7 @@ void Dialog::on_tabWidget_CameraParam2_camera_Profile_itemChanged(QTableWidgetIt
         int block = 17;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_CameraParam2_camera_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_CameraParam2_camera_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -1265,23 +1010,7 @@ void Dialog::on_tabWidget_CameraParam3_camera_Profile_itemChanged(QTableWidgetIt
         int block = 18;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_CameraParam3_camera_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_CameraParam3_camera_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -1325,23 +1054,7 @@ void Dialog::on_tabWidget_CameraParam4_camera_Profile_itemChanged(QTableWidgetIt
         int block = 19;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_CameraParam4_camera_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_CameraParam4_camera_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -1385,23 +1098,7 @@ void Dialog::on_tabWidget_CameraParam5_camera_Profile_itemChanged(QTableWidgetIt
         int block = 20;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_CameraParam5_camera_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_CameraParam5_camera_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -1445,23 +1142,7 @@ void Dialog::on_tabWidget_CameraParam6_camera_Profile_itemChanged(QTableWidgetIt
         int block = 21;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_CameraParam6_camera_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_CameraParam6_camera_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -1505,23 +1186,7 @@ void Dialog::on_tabWidget_CameraParam7_camera_Profile_itemChanged(QTableWidgetIt
         int block = 22;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_CameraParam7_camera_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_CameraParam7_camera_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -1565,23 +1230,7 @@ void Dialog::on_tabWidget_CameraParam8_camera_Profile_itemChanged(QTableWidgetIt
         int block = 23;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_CameraParam8_camera_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_CameraParam8_camera_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -1625,23 +1274,7 @@ void Dialog::on_tabWidget_CameraParam9_camera_Profile_itemChanged(QTableWidgetIt
         int block = 24;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_CameraParam9_camera_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_CameraParam9_camera_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -1685,23 +1318,7 @@ void Dialog::on_tabWidget_CameraParam10_camera_Profile_itemChanged(QTableWidgetI
         int block = 25;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_CameraParam10_camera_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_CameraParam10_camera_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -1745,23 +1362,7 @@ void Dialog::on_tabWidget_CameraParam11_camera_Profile_itemChanged(QTableWidgetI
         int block = 26;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_CameraParam11_camera_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_CameraParam11_camera_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -1805,23 +1406,7 @@ void Dialog::on_tabWidget_CameraParam12_camera_Profile_itemChanged(QTableWidgetI
         int block = 27;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_CameraParam12_camera_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_CameraParam12_camera_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -1865,23 +1450,7 @@ void Dialog::on_tabWidget_CameraParam13_camera_Profile_itemChanged(QTableWidgetI
         int block = 28;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_CameraParam13_camera_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_CameraParam13_camera_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -1925,23 +1494,7 @@ void Dialog::on_tabWidget_CameraParam14_camera_Profile_itemChanged(QTableWidgetI
         int block = 29;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_CameraParam14_camera_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_CameraParam14_camera_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -1985,23 +1538,7 @@ void Dialog::on_tabWidget_CameraParam15_camera_Profile_itemChanged(QTableWidgetI
         int block = 30;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_CameraParam15_camera_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_CameraParam15_camera_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -2045,23 +1582,7 @@ void Dialog::on_tabWidget_CameraParam16_camera_Profile_itemChanged(QTableWidgetI
         int block = 31;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_CameraParam16_camera_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_CameraParam16_camera_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -2105,23 +1626,7 @@ void Dialog::on_tabWidget_CameraParam17_camera_Profile_itemChanged(QTableWidgetI
         int block = 32;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_CameraParam17_camera_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_CameraParam17_camera_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -2165,23 +1670,7 @@ void Dialog::on_tabWidget_CameraParam18_camera_Profile_itemChanged(QTableWidgetI
         int block = 33;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_CameraParam18_camera_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_CameraParam18_camera_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -2225,23 +1714,7 @@ void Dialog::on_tabWidget_CameraParam19_camera_Profile_itemChanged(QTableWidgetI
         int block = 34;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_CameraParam19_camera_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_CameraParam19_camera_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -2285,23 +1758,7 @@ void Dialog::on_tabWidget_CameraParam20_camera_Profile_itemChanged(QTableWidgetI
         int block = 35;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_CameraParam20_camera_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_CameraParam20_camera_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -2345,23 +1802,7 @@ void Dialog::on_tabWidget_CameraParam21_camera_Profile_itemChanged(QTableWidgetI
         int block = 36;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_CameraParam21_camera_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_CameraParam21_camera_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -2405,23 +1846,7 @@ void Dialog::on_tabWidget_CameraParam22_camera_Profile_itemChanged(QTableWidgetI
         int block = 37;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_CameraParam22_camera_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_CameraParam22_camera_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -2465,23 +1890,7 @@ void Dialog::on_tabWidget_CameraParam23_camera_Profile_itemChanged(QTableWidgetI
         int block = 38;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_CameraParam23_camera_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_CameraParam23_camera_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -2525,23 +1934,7 @@ void Dialog::on_tabWidget_CameraParam24_camera_Profile_itemChanged(QTableWidgetI
         int block = 39;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_CameraParam24_camera_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_CameraParam24_camera_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -2585,23 +1978,7 @@ void Dialog::on_tabWidget_CameraParam25_camera_Profile_itemChanged(QTableWidgetI
         int block = 40;
         int field = i%16;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_CameraParam25_camera_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_CameraParam25_camera_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -2647,23 +2024,7 @@ void Dialog::on_tabWidget_CameraParam26_camera_Profile_itemChanged(QTableWidgetI
 
         qDebug()<<"field"<<field<<endl;
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_CameraParam26_camera_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_CameraParam26_camera_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;
@@ -2710,23 +2071,7 @@ void Dialog::on_tabWidget_CameraParam27_camera_Profile_itemChanged(QTableWidgetI
         int field = i%16;
 
         float value = item->text().toFloat();
-        if(2 == i)
-        {
-            value = (1/(value*PI/180*5.0*9/PI));
-            QString strx = QString("%1").arg(value);
-            load_config_flag = 1;
-            tabWidget_CameraParam27_camera_Profile->item(2,1)->setText(strx);
-            load_config_flag = 0;
-            //ui->label_scalarx->setText(strx);
-        }
-        else if(3 == i)
-        {
-            value = (1/(value*PI/180*4.5*9/PI));
-            load_config_flag = 1;
-            tabWidget_CameraParam27_camera_Profile->item(3,1)->setText(QString("%1").arg(value));
-            load_config_flag = 0;
-            //ui->label_scalary->setText(QString("%1").arg(value));
-        }
+
         send_mutex.lock();
         send_arr[3] = 0x30;
         send_arr[4] = block;

@@ -69,7 +69,7 @@ Dialog::Dialog(enum MODE mode,QWidget *parent) :
     sqmin = 32767*0.85;//27852
 
     ui->setupUi(this);
-    this->setWindowTitle(tr("VT322 V1.3"));//设置显示框的名字
+    this->setWindowTitle(tr("VT322 V1.4"));//设置显示框的名字
     //this->resize(714,614);
     this->setMaximumSize(714,614);
     this->setMinimumSize(714,614);

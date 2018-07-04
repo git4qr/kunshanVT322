@@ -125,6 +125,7 @@ void Dialog::on_pushButton_send_clicked()
 {
     bool checkf = true;
     QString sendData = ui->textEdit_ShowSndData->toPlainText();
+    qDebug()<<sendData;
     sndData_02 = string2hex(sendData,checkf);
     sendNum += sndData_02.length();
 
@@ -154,6 +155,7 @@ void Dialog::send_oneframe(int length)
 
     bool checkf = true;
     sndData_02 = string2hex(str1,checkf);
+    //qDebug()<<"sndData_02"<<sndData_02;
     sendNum += sndData_02.length();
     memset(&respstat, 0, sizeof(respstat));
     if(ui->checkBox_timeout->isChecked())
@@ -1585,7 +1587,7 @@ void Dialog::onMsgF()
 }
 void Dialog::onMsgG()
 {
-    dialog_joys.show();
+    //dialog_joys.show();
 }
 
 void Dialog::init_dialog_joys()
